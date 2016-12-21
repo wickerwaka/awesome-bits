@@ -309,16 +309,17 @@ eg. ('C' & '?') => 3 ; ('Z' ^ '@') => 26
 XOR by backtick/chr(96)/binary('1100000')/hex('60') => (x ^ '`')
 eg. ('d' ^ '`') => 4 ; ('x' ^ '`') => 25
 ```
+Note: using anything other than the English letters will produce garbage results
 
 ## Miscellaneous
 
 **Fast color conversion from R5G5B5 to R8G8B8 pixel format using shifts**
 ```
 R8 = (R5 << 3) | (R5 >> 2)
-G8 = (R5 << 3) | (R5 >> 2)
-B8 = (R5 << 3) | (R5 >> 2)
+G8 = (G5 << 3) | (G5 >> 2)
+B8 = (B5 << 3) | (B5 >> 2)
 ```
-Note: using anything other than the English letters will produce garbage results
+
 
 ## Additional Resources
 
